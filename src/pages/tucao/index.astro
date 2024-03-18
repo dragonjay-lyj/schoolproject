@@ -1,0 +1,27 @@
+---
+import Nav from '../../components/nav'
+import Layout from '../../layouts/Layout.astro'
+import AppreciateQRCodes from '../../components/AppreciateQRCodes'
+import Footer from '../../components/Footer'
+import { Waline } from '../../components/waline';
+---
+
+<Layout title='吐槽'>
+  <main class="mx-auto">
+    <Nav client:visible></Nav>
+    <div class="w-full max-w-2xl mx-auto text-center py-10">
+      <h1 class="text-3xl font-semibold tracking-tight pb-4">吐槽</h1>
+    </div>
+    <video class="mx-auto sm:max-w-2xl border border-gray-300 shadow-2xl rounded-3xl dark:border-gray-700" src="https://file.dragonjay.top/d/Onedrive/fanzuigaoshou.mp4?sign=6ot1BpaR68TsYyxFNikZLh0bZmfUmnjQv5Hb_deBe3s=:0" controls="controls" autoplay="autoplay"></video>
+    <div class="flex py-4 flex-col items-center justify-center">
+    <AppreciateQRCodes client:visible />
+        </div>
+        <div class="mx-auto max-w-screen-lg">
+        <Waline serverURL="https://com.dragonjay.top" path="/tucao" pageview={true} emoji={[
+          '//unpkg.com/@waline/emojis@1.2.0/weibo',
+          '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        ]} client:visible />
+</div>
+</main>
+<Footer client:visible></Footer>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import MainLayout from "../../layouts/Layout.astro";
+import HomeworkCard from "../../components/HomeworkCard";
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
+import { ARTICLES_PER_PAGE } from "../../constants";
+import Nav from '../../components/nav';
+
+
+const currentPage: number | null = +Astro.url.searchParams.get('page')! || 1;
+const { post } = Astro.props;
+const allpostposts: CollectionEntry<'post'>[] = (await getCollection('post'))
+
+  const postsForPage: CollectionEntry<'post'>[] = allpostposts.slice((currentPage - 1) * ARTICLES_PER_PAGE, currentPage * ARTICLES_PER_PAGE);
+---
+
+<MainLayout title="作业">
+    <Nav client:visible />
+    <main class="mx-auto flex flex-col items-center justify-center">
+  
+    <div class="w-full max-w-2xl mx-auto text-center py-10">
+      <h1 class="text-3xl font-semibold tracking-tight pb-4">所有帖子</h1>
+    </div>
+  
+    
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+      {postsForPage.map((post) => (
+        <HomeworkCard post={post} client:visible />
+      ))}
+    </div>
+  </main>
+  </MainLayout>

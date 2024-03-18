@@ -1,0 +1,40 @@
+---
+import { getEntry } from 'astro:content';
+import MainLayout from "../../layouts/Layout.astro";
+import Nav from '../../components/nav';
+import GameDetailsCard from '../../components/GameDetailsCard';
+import Footer from '../../components/Footer'
+import { Waline } from '../../components/waline';
+
+
+
+const { slug } = Astro.params;
+import '@waline/client/style';
+
+const entry = await getEntry('game', slug);
+
+if(entry === undefined) {
+  return Astro.redirect('/404');
+}
+
+const { Content } = await entry.render();
+---
+
+<MainLayout title={entry.data.title}>
+  <Nav client:visible></Nav>
+    <article class="max-w-screen-lg mx-auto">
+        <header class="text-center">
+          <h1 class="text-4xl font-bold mb-4">{entry.data.title}</h1>
+          <GameDetailsCard title={entry.data.title} version={entry.data.version} developer={entry.data.developer} thumbnail={entry.data.thumbnail} description={entry.data.description} client:visible></GameDetailsCard>
+        </header> 
+    
+        <Content />
+      </article>
+      <div class="max-w-screen-lg mx-auto my-12">
+      <Waline serverURL="https://com.dragonjay.top" path="/games/palworld" pageview={true} emoji={[
+        '//unpkg.com/@waline/emojis@1.2.0/weibo',
+        '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+      ]} client:visible />
+      </div>
+<Footer client:visible></Footer>
+</MainLayout>

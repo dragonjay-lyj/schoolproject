@@ -10,6 +10,28 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.4"
+    "@astrojs/mdx": "^2.2.0",
+    "@astrojs/react": "^3.1.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.3.6",
+    "@iconify-json/material-symbols": "^1.1.75",
+    "@nextui-org/react": "^2.2.10",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "astro": "^4.4.4",
+    "astro-icon": "^1.1.0",
+    "framer-motion": "^11.0.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^11.0.7",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.1.20",
+    "@iconify-json/mdi": "^1.1.64",
+    "@iconify/react": "^4.1.1",
+    "@iconify/tailwind": "^0.1.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "@waline/client": "^3.1.3"
   }
 }
