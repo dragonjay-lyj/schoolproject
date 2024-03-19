@@ -9,7 +9,7 @@ import {
     Avatar,
     Link, Button,
   } from "@nextui-org/react";
-  
+  import SearchComponent from "../components/Search";
   
   const MyNavbar = () => {
     return (
@@ -23,6 +23,7 @@ import {
           <NavbarItem><Button href="/posts" as={Link} color="foreground" isBlock className="text-white" ><span className="icon-[material-symbols--workspace-premium-rounded]"></span>作业</Button></NavbarItem>
           <NavbarItem><Button href="/tucao" as={Link} color="foreground" isBlock className="text-white" ><span className="icon-[material-symbols--favorite-rounded]"></span>吐槽</Button></NavbarItem>
         </NavbarContent>
+        <SearchComponent />
         <NavbarMenuToggle className=" lg:flex" aria-label="Menu" justify="end" />
         <NavbarMenu>
           <NavbarMenuItem><Button href="/" as={Link} color="foreground" isBlock className="text-white" ><span className="icon-[material-symbols--home-rounded]"></span>首页</Button></NavbarMenuItem>

@@ -1,0 +1,58 @@
+---
+import MainLayout from "../layouts/Layout.astro";
+import AllarticleCard from "../components/AllarticleCard";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import Nav from '../components/nav';
+
+
+const query = Astro.url.searchParams.get('query'); // 不必将其声明为 string | null，因为 Astro.url.searchParams.get() 返回 string | null 类型
+
+const allGames: CollectionEntry<'game'>[] = await getCollection('game');
+const allPosts: CollectionEntry<'post'>[] = await getCollection('post');
+const allEntries = [...allGames, ...allPosts];
+
+let searchResults: (CollectionEntry<'post'> | CollectionEntry<'game'>)[] = [];
+
+if (query) {
+  // 当query存在时进行过滤
+  searchResults = allEntries.filter((article) => {
+    if (!article.data?.title || !article.body || !article.slug) {
+      // 额外的空值保护，防止数据不完整导致错误
+      return false;
+    }
+
+    const titleMatch: boolean = article.data.title
+      .toLowerCase()
+      .includes(query.toLowerCase());
+    
+    const bodyMatch: boolean = article.body
+      .toLowerCase()
+      .includes(query.toLowerCase());
+      
+    const slugMatch: boolean = article.slug
+      .toLowerCase()
+      .includes(query.toLowerCase());
+
+    return titleMatch || bodyMatch || slugMatch;
+  });
+} else {
+  // 如果没有查询参数，则显示所有条目
+  searchResults = allEntries;
+}
+---
+
+<MainLayout title="搜索结果">
+  <Nav client:visible />
+  <main class="mx-auto flex flex-col items-center justify-center">
+    <div class="w-full max-w-2xl mx-auto text-center py-10">
+      <h1 class="text-3xl font-semibold tracking-tight pb-4">所有帖子</h1>
+    </div>
+
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+    {searchResults.map(article => (
+      <AllarticleCard article={article} client:visible />
+    ))}
+  </div>
+  </main>
+</MainLayout>
