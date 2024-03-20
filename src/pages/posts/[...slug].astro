@@ -29,7 +29,7 @@ const { Content } = await entry.render();
         <Content />
       </article>
       <div class="max-w-screen-lg mx-auto my-12">
-      <Waline serverURL="https://com.dragonjay.top" path="/posts/palworld" pageview={true} emoji={[
+      <Waline serverURL="https://com.dragonjay.top" path={`/posts/${entry.slug}`} pageview={true} emoji={[
         '//unpkg.com/@waline/emojis@1.2.0/weibo',
         '//unpkg.com/@waline/emojis@1.2.0/bmoji',
       ]} client:visible />
