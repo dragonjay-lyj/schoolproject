@@ -21,13 +21,13 @@ import AppreciateQRCodes from '../../components/AppreciateQRCodes'
   <div class="m-0 bg-transparent leading-normal text-white" dir="auto" style="font-size: 14px;">
     <p class="mb-4" dir="auto"><strong class="font-semibold">放大</strong></p>
     <ul class="mb-4 mt-0 pl-[2em]">
-      <li>Cmd + +（Mac）</li>
-      <li>Ctrl + +（Windows）</li>
+      <li>Cmd + 滚轮（Mac）</li>
+      <li>Ctrl + 滚轮（Windows）</li>
     </ul>
     <p class="mb-4" dir="auto"><strong class="font-semibold">缩小</strong></p>
     <ul class="mb-4 mt-0 pl-[2em]">
-      <li>Cmd + -（Mac）</li>
-      <li>Ctrl + -（Windows）</li>
+      <li>Cmd + 滚轮（Mac）</li>
+      <li>Ctrl + 滚轮（Windows）</li>
     </ul>
   </div>
 </div>
@@ -36,7 +36,7 @@ import AppreciateQRCodes from '../../components/AppreciateQRCodes'
 
 <div class="relative mt-2.5 box-border max-w-full select-text rounded-[10px] border border-solid border-[hsla(0,0%,100%,0.192)] bg-[#000] p-2.5 text-sm transition-all duration-[0.3s] ease-[ease]">
   <div class="m-0 bg-transparent leading-normal text-white" dir="auto" style="font-size: 14px;">
-    <p class="mb-4 mt-0" dir="auto">镜像工具只能对路径产生作用，不能对填充、描边或其他对象属性产生作用。</p>
+    <p class="mb-4 mt-0" dir="auto">镜像工具只能对对象本身产生作用，不能对填充、描边或其他对象属性产生作用。</p>
     <p class="mb-4 mt-0" dir="auto">要镜像填充或描边，请先将其转换为路径：</p>
     <ol class="mt-0 pl-[2em]">
       <li>选中要转换的填充或描边。</li>
@@ -50,7 +50,7 @@ import AppreciateQRCodes from '../../components/AppreciateQRCodes'
 
 <div class="relative mt-2.5 box-border max-w-full select-text rounded-[10px] border border-solid border-[hsla(0,0%,100%,0.192)] bg-[#000] p-2.5 text-sm transition-all duration-[0.3s] ease-[ease]">
   <div class="m-0 bg-transparent leading-normal text-white" dir="auto" style="font-size: 14px;">
-    <p class="mb-4 mt-0" dir="auto">按住 Alt 键并使用矩形工具可以绘制一个 <strong class="font-semibold">正方形</strong>。</p>
+    <p class="mb-4 mt-0" dir="auto">按住 Alt 键并使用矩形工具可以绘制一个 <strong class="font-semibold">以单击点为中心的矩形</strong>。</p>
     <p class="mb-4 mt-0" dir="auto">步骤：</p>
     <ol class="mt-0 pl-[2em]">
       <li>选择矩形工具（M）。</li>
@@ -79,16 +79,7 @@ import AppreciateQRCodes from '../../components/AppreciateQRCodes'
 <div class="relative mt-2.5 box-border max-w-full select-text rounded-[10px] border border-solid border-[hsla(0,0%,100%,0.192)] bg-[#000] p-2.5 text-sm transition-all duration-[0.3s] ease-[ease]">
   <div class="m-0 bg-transparent leading-normal text-white" dir="auto" style="font-size: 14px;">
     <p class="mb-4 mt-0" dir="auto">在 Adobe Illustrator 中双击任意一个边角构件后弹出的边角对话框中，可以设置以下内容：</p>
-    <ul class="mb-4 mt-0 pl-[2em]">
-      <li><strong class="font-semibold">宽度：</strong>设置边角的宽度（半径）。</li>
-      <li><strong class="font-semibold">高度：</strong>设置边角的高度（半径）。</li>
-      <li><strong class="font-semibold">预览：</strong>显示所选边角设置的预览。</li>
-      <li><strong>所有边角：<strong>将设置应用于选定对象的</strong>所有</strong>边角。</li>
-      <li><strong class="font-semibold">链接：</strong>将宽度和高度链接在一起，以保持边角的正方形形状。</li>
-      <li><strong class="font-semibold">确定：</strong>接受更改并关闭对话框。</li>
-      <li><strong class="font-semibold">取消：</strong>关闭对话框而不应用任何更改。</li>
-    </ul>
-    <p class="mt-0" dir="auto">通过调整边角设置，可以创建具有不同圆角半径的自定义边角，从而为对象提供更平滑或更锐利的边缘。</p>
+    <p class="mt-0" dir="auto">边角样式、边角半径和圆角类型</p>
   </div>
 </div>
 
@@ -126,7 +117,7 @@ import AppreciateQRCodes from '../../components/AppreciateQRCodes'
 
 <div class="relative mt-2.5 box-border max-w-full select-text rounded-[10px] border border-solid border-[hsla(0,0%,100%,0.192)] bg-[#000] p-2.5 text-sm transition-all duration-[0.3s] ease-[ease]">
   <div class="m-0 bg-transparent leading-normal text-white" dir="auto" style="font-size: 14px;">
-    <p class="mb-4 mt-0" dir="auto">在 Adobe Illustrator 中使用“连接”工具可以将交叉、重叠或两端开放的路径连接成一个单一的路径。它通过在路径的端点之间创建新的锚点并调整现有锚点的手柄来实现这一点。</p>
+    <p class="mb-4 mt-0" dir="auto">在 Adobe Illustrator 中使用“连接”工具可以将交叉、重叠或两端开放的路径连接成闭合路径。它通过在路径的端点之间创建新的锚点并调整现有锚点的手柄来实现这一点。</p>
     <p class="mb-4 mt-0" dir="auto">具体来说，“连接”工具的工作原理如下：</p>
     <ul class="mb-4 mt-0 pl-[2em]">
       <li>它在路径的端点之间创建新的锚点，从而连接两条路径。</li>
@@ -155,17 +146,7 @@ import AppreciateQRCodes from '../../components/AppreciateQRCodes'
 
 <div class="relative mt-2.5 box-border max-w-full select-text rounded-[10px] border border-solid border-[hsla(0,0%,100%,0.192)] bg-[#000] p-2.5 text-sm transition-all duration-[0.3s] ease-[ease]">
   <div class="m-0 bg-transparent leading-normal text-white" dir="auto" style="font-size: 14px;">
-    <p class="mb-4 mt-0" dir="auto">在 Adobe Illustrator 中，路径查找器面板可以通过以下几种方式弹出：</p>
-    <ul class="mb-4 mt-0 pl-[2em]">
-      <li><strong class="font-semibold">菜单栏：</strong>窗口 &gt; 路径查找器</li>
-      <li><strong class="font-semibold">快捷键：</strong>Shift + Ctrl + F9 (Windows) / Shift + Cmd + F9 (Mac)</li>
-      <li><strong class="font-semibold">工作区：</strong>单击工作区右上角的“路径查找器”图标</li>
-    </ul>
-    <p class="mt-0" dir="auto"><strong>提示：</strong></p>
-    <ul class="mb-4 mt-0 pl-[2em]">
-      <li>也可以通过右键单击画板并选择“路径查找器”来弹出路径查找器面板。</li>
-      <li>还可以将路径查找器面板拖出工作区，使其成为一个浮动面板。</li>
-    </ul>
+    <p class="mb-4 mt-0" dir="auto">在 Adobe Illustrator 中，路径查找器面板可以通过选择“窗口--路径查找器”命令弹出</p>
   </div>
 </div>
 
