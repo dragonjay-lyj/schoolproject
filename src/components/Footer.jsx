@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="mb-4 md:mb-0">
           <User
-            name="龙雨杰"
+            name="DragonJay"
             description="是做这个的"
             avatarProps={{
               src: "https://cdn.ipfsscan.io/ipfs/QmQqXgZAbEZbegbGS3zpo99XozzqA5YNwNL1W5NPRvRHVS",

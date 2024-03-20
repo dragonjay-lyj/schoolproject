@@ -1,7 +1,9 @@
 import { User } from "@nextui-org/react";
+import {Link} from "@nextui-org/react";
 
-const LinkCard = ({ avatar, name, description }) => {
+const LinkCard = ({ avatar, name, description, link }) => {
   return (
+    <Link href={link} color="foreground">
     <User
       name={name}
       description={description}
@@ -9,6 +11,7 @@ const LinkCard = ({ avatar, name, description }) => {
         src: {avatar}
       }}
     />
+    </Link>
   );
 };
 

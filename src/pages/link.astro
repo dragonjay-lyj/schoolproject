@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/nav';
+import LinkCard from "../components/LinkCard";
+import data from "../pages/api/link.json";
+---
+
+<Layout title="懒人急救指南">
+  <Nav client:visible></Nav>
+	<main class="mx-auto flex flex-col items-center justify-center">
+    <div class="w-full max-w-2xl mx-auto text-center py-10">
+      <h1 class="text-3xl font-semibold tracking-tight pb-4">友情链接</h1>
+    </div>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+{data.map((link) => (
+  <LinkCard avatar={link.avatar} name={link.name} description={link.description} link={link.link} client:visible />
+))}
+</div>
+</main>
+</Layout>
