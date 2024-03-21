@@ -13,14 +13,8 @@ const Footer = () => {
             <Avatar src="https://allsaintsstreet.com/assets/img/character/thumb-05_n.png" />
           </AvatarGroup>
         </div>
-        <div className="mb-4 md:mb-0">
-          <User
-            name="DragonJay"
-            description="是做这个的"
-            avatarProps={{
-              src: "https://cdn.ipfsscan.io/ipfs/QmQqXgZAbEZbegbGS3zpo99XozzqA5YNwNL1W5NPRvRHVS",
-            }}
-          />
+        <div className="mb-4 md:mb-0 gap-2">
+          <a href="https://icp.gov.moe/?keyword=20240260" target="_blank">萌ICP备20240260号</a>
         </div>
         <div className="flex gap-3">
         <Button href="/" as={Link} color="foreground" isBlock className="text-white" ><span className="icon-[material-symbols--home-rounded]"></span>首页</Button>
