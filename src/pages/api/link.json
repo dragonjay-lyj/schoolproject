@@ -1,8 +1,8 @@
 [
     {
-      "name": "Awesome Site",
+      "name": "邯郸科技职业学院",
       "description": "A great website about tech and programming.",
-      "avatar": "/images/friend-link-avatar-1.jpg",
-      "link": "/images/friend-link-avatar-1.jpg"
+      "avatar": "https://www.hdkz.edu.cn/static/images/footer-logo.png",
+      "link": "https://www.hdkz.edu.cn/"
     }
   ]
