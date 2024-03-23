@@ -17,6 +17,8 @@ export default defineConfig({
     }
   }), sitemap()],
   output: "server",
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   site: 'https://dev.dragonjay.top',
 });
