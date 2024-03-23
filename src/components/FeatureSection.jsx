@@ -19,14 +19,14 @@ const FeatureSection = () => {
       className="bg-center bg-cover bg-no-repeat py-4 md:py-14 lg:py-20"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(https://cdn.ipfsscan.io/ipfs/QmZgzRa9Zr7TyMk5BeotpGdkE9mj764t9Qsm59WLAG5FDx)",
+          "linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(https://res.cloudinary.com/dkhp3hucr/image/upload/v1711180443/dev/QmZgzRa9Zr7TyMk5BeotpGdkE9mj764t9Qsm59WLAG5FDx_qkqvpk.avif)",
       }}
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1">
             <Image
-              src="https://cdn.ipfsscan.io/ipfs/QmV8H6tKvXgaazZHExkD6h6WpFC7B4rFf9LDUZRWkGqRLh"
+              src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1711180360/dev/QmV8H6tKvXgaazZHExkD6h6WpFC7B4rFf9LDUZRWkGqRLh_isqjgm.avif"
               alt="Feature image"
               width={500}
               height={300}

@@ -14,7 +14,7 @@ const MyNotificationCard = () => {
     className="bg-center bg-cover bg-no-repeat py-4 md:py-14 lg:py-20"
     style={{
       backgroundImage:
-        "linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(https://cdn.ipfsscan.io/ipfs/QmbqTYxzsd5Ao4B7BsbCx47NH5MHUmGZKXZCtx7pLZKndM)",
+        "linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(https://res.cloudinary.com/dkhp3hucr/image/upload/v1711180495/dev/QmbqTYxzsd5Ao4B7BsbCx47NH5MHUmGZKXZCtx7pLZKndM_ubwfvp.avif)",
     }}
   >
     <div className="flex items-center justify-center flex-col">
