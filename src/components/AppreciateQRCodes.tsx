@@ -22,7 +22,7 @@ const AppreciateQRCodes: React.FC = () => {
             loading="lazy"
             width={300}
             alt="微信赞赏码"
-            src="https://i1.wp.com/i.ibb.co/gPYDVZC/wxpf2f0-A3-Od-YPia-HEFVtuk-UAXWeru-XC50p0c-Sk-L6-N8o-LV5-DZio.png"
+            src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1711460449/dev/wxpf2f0-A3-Od-YPia-HEFVtuk-UAXWeru-XC50p0c-Sk-L6-N8o-LV5-DZio_webkuf.png"
           />
         </div>
         <div className="flex flex-col items-center space-y-2">
@@ -31,7 +31,7 @@ const AppreciateQRCodes: React.FC = () => {
             loading="lazy"
             width={300}
             alt="支付宝赞赏码"
-            src="https://i1.wp.com/i.ibb.co/Jxks1z6/httpsqr-alipay-comfkx10123ym1kfeinpuekk36.png"
+            src="https://res.cloudinary.com/dkhp3hucr/image/upload/v1711460499/dev/httpsqr-alipay-comfkx10123ym1kfeinpuekk36_dbs0jc.png"
           />
         </div>
       </div>
