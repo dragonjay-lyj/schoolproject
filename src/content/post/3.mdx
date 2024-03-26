@@ -1,0 +1,447 @@
+---
+title: '第三章 数据定义'
+herf: '/posts/3'
+description: '只能说很牛逼'
+---
+
+import AppreciateQRCodes from '../../components/AppreciateQRCodes'
+import {Code} from "@nextui-org/react";
+
+<div className="prose mx-auto">
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">创建图书馆借还书管理数据库librarydb</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要在MySQL中创建一个名为librarydb的数据库，可以使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">CREATE</span> DATABASE librarydb;
+              </Code>
+              </pre>
+              <p>这个命令会在MySQL中创建一个名为librarydb的新数据库。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">显示当前MySQL 中的数据库</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要显示当前MySQL中的所有数据库，可以使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">SELECT</span> DATABASE();
+              </Code>
+              </pre>
+              <p>这个命令会返回当前MySQL中的所有数据库列表。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">使数据库librarydb成为当前默认的数据库</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要将当前默认的数据库设置为database库，可以使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">SELECT</span> librarydb;
+              </Code>
+              </pre>
+              <p>这个命令会将当前默认的数据库设置为librarydb。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">显示数据库librarydb中所有数据表的名称。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要显示数据库librarydb中所有数据表的名称，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">SELECT </span>TABLE_NAME<span class="text-[#a626a4]"> FROM </span>INFORMATION_SCHEMA.TABLES <span class="text-[#a626a4]">WHERE</span> TABLE_SCHEMA = 'librarydb';
+              </Code>
+              </pre>
+              <p>这个命令会从INFORMATION_SCHEMA数据库中的TABLES表中选择TABLE_NAME列，然后通过WHERE子句筛选出在librarydb数据库中的所有表名。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">查看图书表book的基本结构。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要查看图书表book的基本结构，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">DESCRIBE </span>book;
+              </Code>
+              </pre>
+              <p>这个命令会显示book表的所有列名、数据类型和其他属性。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">查看读者表reader的详细结构。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要查看读者表reader的详细结构，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              SHOW CREATE TABLE reader;
+              </Code>
+              </pre>
+              <p>这个命令会显示reader表的所有列名、数据类型、是否主键、是否唯一、是否自动递增等信息。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">为读者类别表readertype指定检查约束，即指定最大可借数量的范围为0～30本。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为读者类别表readertype指定检查约束，以限制最大可借数量的范围为0～30本，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>readertype <span class="text-[#a626a4]">ADD CONSTRAINT </span>max_quantity <span class="text-[#a626a4]">CHECK </span>(max_quantity BETWEEN 0 AND 30);
+              </Code>
+              </pre>
+              <p>这个命令会在readertype表中创建一个名为checkMaxBorrows的检查约束，并对maxBorrows字段的值进行范围检查。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">要为读者表reader指定外键约束，以确保其读者类别typeno字段的值必须是读者类别表readertype中类别编号typeno字段已经存在的值，可以使用以下MySQL命令：</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为读者类别表readertype指定检查约束，以限制最大可借数量的范围为0～30本，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>reader <span class="text-[#a626a4]">ADD CONSTRAINT </span>fk_reader_type <span class="text-[#a626a4]">FOREIGN KEY </span>(typeno) <span class="text-[#a626a4]">REFERENCES </span>readertype(typeno);
+              </Code>
+              </pre>
+              <p>这个命令会在reader表中创建一个名为fk_reader_type的外键约束，并将typeNo字段的值与readerType表中typeNo字段的值进行关联。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">为读者表 reader 指定检查约束，即指定性别只能是“男”或“女”。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为读者表 reader 指定检查约束，以确保性别字段的值只能是“男”或“女”，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>reader <span class="text-[#a626a4]">ADD CONSTRAINT </span>checkGender <span class="text-[#a626a4]">CHECK </span>(sex IN ('男', '女'));
+              </Code>
+              </pre>
+              <p>这个命令会在 reader 表中创建一个名为 checkGender 的检查约束，并对 gender 字段的值进行范围检查。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">修改读者表reader的默认值约束，使读者类别typeno字段的默认值为“1”。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为读者表reader修改默认值约束，以使读者类别typeno字段的默认值为“1”，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>reader <span class="text-[#a626a4]">MODIFY COLUMN </span>typeno <span class="text-[#a626a4]">INT DEFAULT </span>1;
+              </Code>
+              </pre>
+              <p>这个命令会将typeNo字段的默认值更改为“1”。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">为图书表book指定检查约束，即指定定价price字段的值必须大于0。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为图书表book指定检查约束，以确保定价price字段的值必须大于0，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>book <span class="text-[#a626a4]">ADD CONSTRAINT </span>checkPrice <span class="text-[#a626a4]">CHECK </span>(price > 0);
+              </Code>
+              </pre>
+              <p>这个命令会在book表中创建一个名为checkPrice的检查约束，并对price字段的值进行范围检查。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">为借还书表borrow指定外键约束，使其读者编号rid字段的值必须是读者表reader中读者编号rid字段已经存在的值</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为借还书表borrow指定外键约束，以确保其读者编号rid字段的值必须是读者表reader中读者编号rid字段已经存在的值，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>borrow <span class="text-[#a626a4]">ADD CONSTRAINT </span>fk_reader_borrow <span class="text-[#a626a4]">FOREIGN KEY </span>(rid) <span class="text-[#a626a4]">REFERENCES </span>reader(rid);
+              </Code>
+              </pre>
+              <p>这个命令会在borrow表中创建一个名为fk_reader_borrow的外键约束，并将rid字段的值与reader表中rid字段的值进行关联。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">为借还书表borrow指定外键约束，使其图书编号bid字段的值必须是图书表book中图书编号bid字段已经存在的值，</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要为借还书表borrow指定外键约束，以确保其读者编号rid字段的值必须是读者表reader中读者编号rid字段已经存在的值，可以使用以下MySQL命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">ALTER TABLE </span>borrow <span class="text-[#a626a4]">ADD CONSTRAINT </span>fk_book_borrow <span class="text-[#a626a4]">FOREIGN KEY </span>(bid) <span class="text-[#a626a4]">REFERENCES </span>book(bid);
+              </Code>
+              </pre>
+              <p>这个命令会在borrow表中创建一个名为fk_book_borrow的外键约束，并将bid字段的值与book表中bid字段的值进行关联。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="py-4">
+
+<AppreciateQRCodes client:visible />
+
+</div>
+
+</div>
