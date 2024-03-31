@@ -1,0 +1,215 @@
+---
+title: '第四章 数据操作'
+herf: '/posts/4'
+description: '只能说很牛逼'
+---
+
+import AppreciateQRCodes from '../../components/AppreciateQRCodes'
+import {Code} from "@nextui-org/react";
+
+<div className="prose mx-auto">
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">读者10631218于2022年7月5日借阅了一本图书01351006，请在borrow表中添加该读者对该书的借还书数据，并在book表中将该图书的库存数量减1（假定该图书库存充足可借）。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要在MySQL中添加新的借还书数据，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              <span class="text-[#a626a4]">INSERT INTO</span> borrow VALUES ("10631218","01351006","2022-07-05",NULL)
+              </Code>
+              </pre>
+              <p>这个命令会在borrow表中添加一条新的记录，表示读者10631218于2022年7月5日借阅了图书01351006，同时还设定了还书日期为当天。</p>
+              <p>然后，要在MySQL中修改book表的库存数量，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              UPDATE book SET total = total - 1 WHERE bid = '01351006';
+              </Code>
+              </pre>
+              <p>这个命令会将bid为01351006的图书的库存数量减少1。请注意，假设该图书的库存足够，否则需要检查库存是否足够再进行减1操作。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">读者10631218归还了借阅的图书01351006，还书日期为系统当前日期，请修改borrow表中相应的借还书数据，并在book表中将该图书的库存数量加1。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要在MySQL中修改borrow表中的借还书数据，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              UPDATE borrow SET return_date = CURRENT_DATE WHERE rid = '10631218' AND bid = '01351006';
+              </Code>
+              </pre>
+              <p>这个命令会将rid为10631218和bid为01351006的借还书的还书日期更新为当前日期。</p>
+              <p>然后，要在MySQL中修改book表的库存数量，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              UPDATE book SET total = total + 1 WHERE bid = '01351006';
+              </Code>
+              </pre>
+              <p>这个命令会将bid为01351006的图书的库存数量增加1。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">读者10701274孟凯彦离职了，请将其从读者表reader中删除。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要在MySQL中删除读者10701274（孟凯彦）的记录，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              DELETE FROM reader WHERE rid = '10701274';
+              </Code>
+              </pre>
+              <p>这个命令会从reader表中删除rid为10701274的记录。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">读者10631218李亚明也离职了，请将其从读者表reader中删除，并思考不能删除的原因（外键约束）。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要在MySQL中删除读者10631218（李亚明）的记录，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              DELETE FROM reader WHERE rid = '10631218';
+              </Code>
+              </pre>
+              <p>这个命令会从reader表中删除rid为10631218的记录。</p>
+              <p>然而，如果在删除读者10631218的记录时，他的借书记录仍然存在，那么由于外键约束的存在，将无法删除他的借书记录。这是因为外键约束要求父表的记录必须存在才能插入子表的记录。在这种情况下，需要先删除所有的借书记录，然后再删除读者10631218的记录。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="mb-[42px]">
+    <div class="mt-4 block w-full flex-wrap items-start justify-start rounded-t-[10px] px-8 py-[15px]" style="position: relative; background: linear-gradient(90deg, #c7d7f4 63%, #e2e9ff);">
+      <div class="absolute -left-0.5 -top-5 mr-2.5 mt-[5px] h-[30px] w-[30px] overflow-hidden rounded-[50%]"><img class="m-0 block flex h-[30px] w-[30px] w-full whitespace-pre-wrap rounded-[5px] border-[none] p-0 text-left text-sm font-normal leading-[26px] tracking-[0.02px] text-black" src="https://upload-bbs.miyoushe.com/upload/2023/04/06/296250048/10eaf59eeb6978ddecb8e0c720e14b8f_7886984016448468972.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg" alt="" /></div>
+      <div class="brother">由于图书01351006全部损毁，不再提供借阅，请从图书表book中将该图书删除。删除该图书后，请查看borrow表中与该图书相关的借还书记录是否还存在，并思考原因（外键约束）。</div>
+    </div>
+    <div class="relative mt-0 block w-full flex-wrap items-start justify-start rounded-bl-[10px] rounded-br-[10px] border border-t-0 border-solid border-[#9eb3e6] px-8 py-[22px]">
+      <div class="">
+        <div class="block border-0 p-0 leading-[33px]" style="width: auto;">
+          <div class="indented-text" style='word-break: break-word; margin: 0px; border: none; min-height: auto; padding: 0px; font-size: 14px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 26px; letter-spacing: 0.01px;'>
+            <div class="">
+              <p>要在MySQL中删除图书01351006的记录，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              DELETE FROM book WHERE bid = '01351006';
+              </Code>
+              </pre>
+              <p>这个命令会从book表中删除bid为01351006的记录。</p>
+              <p>然后，要查看borrow表中是否还有与图书01351006相关的借还书记录，使用以下命令：</p>
+              <pre class="overflow-auto rounded-md bg-[#f6f8fa] p-4 text-[85%] leading-[1.45]">
+              <div class="text-right text-xs text-[rgba(128,135,146,0.8)] absolute w-full flex justify-end items-center px-4 py-0 right-0 top-[5px]">
+              <span class="mr-3.5">sql代码</span>
+              </div>
+              <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
+              SELECT * FROM borrow WHERE bid = '01351006';
+              </Code>
+              </pre>
+              <p>这个命令会查询borrow表中所有bid为01351006的记录。</p>
+              <p>如果查询结果为零，说明所有的借还书记录已经被删除。如果查询结果不为零，说明还有一些借还书记录存在。这些记录无法被删除，因为它们引用的是已经存在的图书01351006的记录。这是因为外键约束的要求，即父表的记录必须存在才能插入子表的记录。</p>
+            </div>
+          </div>
+          <div style='font-size: 12px; font-family: "PingFang SC", "PingFang SC-Light"; font-weight: 400; text-align: left; color: rgb(128, 135, 146); line-height: 41px; letter-spacing: 0.01px;'>以上内容为AI生成，其准确性和完整性无法保证，亦不代表开发者立场</div>
+          <div class="commet_wrapper" style="display: flex; justify-content: space-between;">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="py-4">
+
+<AppreciateQRCodes client:visible />
+
+</div>
+
+</div>
