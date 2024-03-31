@@ -26,7 +26,7 @@ import {Code} from "@nextui-org/react";
               <span class="mr-3.5">sql代码</span>
               </div>
               <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
-              <span class="text-[#a626a4]">INSERT INTO</span> borrow VALUES ("10631218","01351006","2022-07-05",NULL)
+              <span class="text-[#a626a4]">INSERT INTO</span> borrow VALUES ("10631218","01351006","2022-07-05",NULL);
               </Code>
               </pre>
               <p>这个命令会在borrow表中添加一条新的记录，表示读者10631218于2022年7月5日借阅了图书01351006，同时还设定了还书日期为当天。</p>
@@ -69,7 +69,7 @@ import {Code} from "@nextui-org/react";
               <span class="mr-3.5">sql代码</span>
               </div>
               <Code class="block overflow-x-auto overflow-visible leading-[inherit] bg-transparent break-normal whitespace-pre text-[100%] text-[#383a42] m-0 p-[1em] rounded-md border-0">
-              UPDATE borrow SET return_date = CURRENT_DATE WHERE rid = '10631218' AND bid = '01351006';
+              UPDATE borrow SET returntime = CURRENT_DATE WHERE rid = '10631218' AND bid = '01351006';
               </Code>
               </pre>
               <p>这个命令会将rid为10631218和bid为01351006的借还书的还书日期更新为当前日期。</p>
